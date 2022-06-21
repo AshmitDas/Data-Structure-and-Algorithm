@@ -94,9 +94,9 @@ class LinkedList:
     def remove(self, index):
         if index < 0 or index >= self.length:
             return None
-        if self.length == 0:
+        if index == 0:
             return self.pop_first()
-        if self.length == index - 1:
+        if index == self.length - 1:
             return self.pop()
         pre = self.get(index - 1)
         temp = pre.next
@@ -119,6 +119,8 @@ class LinkedList:
         
 
     def print_list(self) -> None:
+        if self.length == 0:
+            return None
         temp = self.head
         while temp is not None:
             print(temp.value)
@@ -127,15 +129,11 @@ class LinkedList:
     
 
 alinkedlist = LinkedList(1)
-
 alinkedlist.append(2)
-alinkedlist.append(3)
-alinkedlist.append(4)
-
-alinkedlist.reverse()
+alinkedlist.prepend(0)
+alinkedlist.pop()
+alinkedlist.pop_first()
+alinkedlist.remove(0)
 
 alinkedlist.print_list()
 
-# print(alinkedlist.pop())
-# print(alinkedlist.pop())
-# print(alinkedlist.pop())
