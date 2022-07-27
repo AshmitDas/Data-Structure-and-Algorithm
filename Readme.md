@@ -2,6 +2,8 @@
 Data structures and Algorithm problems solved using python3. All problems are being followed from the udemy course [The Ultimate Python Coding Interview & Computer Science Bootcamp](https://www.udemy.com/course/data-structures-algorithms-python/).
 
 ## Data Structures: 
+
+### Linear
 1. **Linked List:** *A linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next.*
 
 2. **Doubly Linked List:** *A doubly linked list is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains three fields: two link fields and one data field.*
@@ -9,6 +11,8 @@ Data structures and Algorithm problems solved using python3. All problems are be
 3. **Stack:** *A stack is a linear data structure that follows the principle of Last In First Out (LIFO).*
 
 4. **Queue:** *A Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO).*
+
+### Non-Linear
 
 5. **Binary Search Tree:** *A binary search tree, also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree.*
 
