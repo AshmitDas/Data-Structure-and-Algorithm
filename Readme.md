@@ -40,4 +40,4 @@ Data structures and Algorithm problems solved using python3. All problems are be
 9. **[Inorder, PostOrder, PreOrder](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/).**
 
 
-*Source:* *[Wikipedia](https://www.wikipedia.org/),* *[GeeksForGeeks](https://www.geeksforgeeks.org/),* *[JavaTpoint](https://www.javatpoint.com/).*
+*Sources:* *[Wikipedia](https://www.wikipedia.org/),* *[GeeksForGeeks](https://www.geeksforgeeks.org/),* *[JavaTpoint](https://www.javatpoint.com/).*
