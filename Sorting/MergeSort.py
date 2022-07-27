@@ -1,4 +1,5 @@
 def merge(list1, list2):
+    """Big O: O(n)"""
     # Merges the lists into one until it's similar to the length of the original list and sorts elements while merging
 
     combined = []
@@ -30,6 +31,7 @@ def merge(list1, list2):
 
 
 def merge_sort(my_list):
+    """Big O: O(log n)"""
     #Breaks the list into two halves and continues until each list containes only one element
 
     if len(my_list) == 1:
@@ -43,5 +45,5 @@ def merge_sort(my_list):
     return merge(merge_sort(left), merge_sort(right))
 
 
-
+"""Big O: O(n log n)"""
 print(merge_sort([5,4,7,1,3,2,8,6]))

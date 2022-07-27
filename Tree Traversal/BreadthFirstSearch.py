@@ -48,6 +48,10 @@ class BinarySearchTree:
         return current_node
 
     def bfs(self):
+        """Big O: O(V + E)"""
+        # Checks the first_node(i.e root node) store it in the queue list
+        # then remove it from queue list and append it's value to the result list
+        # after than append last removed left and right node to the queue list.
         current_node = self.root
         queue = []
         results = []

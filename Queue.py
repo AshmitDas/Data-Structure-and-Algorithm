@@ -14,6 +14,9 @@ class Queue:
         self.length = 1
 
     def enqueue(self, value):
+        """Big O: O(1)"""
+        # Adds a element to the end of the queue.
+
         new_node = Node(value)
         if self.first is None:
             self.first = new_node
@@ -25,6 +28,9 @@ class Queue:
         return True
 
     def dequeue(self):
+        """Big O: O(1)"""
+        # Removes a element from the begining of the queue.
+
         if self.length == 0:
             return None
         temp = self.first
@@ -39,6 +45,9 @@ class Queue:
     
 
     def print_queue(self):
+        """Big O: O(n)"""
+        # Prints the whole queue
+        
         if self.length == 0:
             return None
         temp = self.first

@@ -12,6 +12,10 @@ class BinarySearchTree:
         self.root = None
 
     def insert(self, value):
+        """Average: Θ(log(n))
+           Big O: O(n)"""
+        # Adds a node to the tree.
+
         new_node = Node(value)
         if self.root is None:
             self.root = new_node
@@ -32,6 +36,9 @@ class BinarySearchTree:
                 temp = temp.right
 
     def contains(self, value):
+        """Average: Θ(log(n))
+           Big O: O(n)"""
+        # Searches if the value exists in the tree or not.
         temp = self.root
         while temp is not None:
             if value < temp.value:
@@ -43,6 +50,8 @@ class BinarySearchTree:
         return False
 
     def min_value_node(self, current_node):
+        """Big O: O(n)"""
+        # Looks for the minimum value Node.
         while current_node.left is not None:
             current_node = current_node.left
         return current_node

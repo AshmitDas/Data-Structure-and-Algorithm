@@ -1,4 +1,9 @@
 def selecton_sort(my_list):
+    """Big o: O(n^2)"""
+    # Loops thorugh the whole list and starts with zero Index 
+    # checks except current_index(i.e zeroth) if there is are/is any smaller element 
+    # if so it swaps place with smallest element among the smaller elements and 
+    # current_index value incremented by 1(i.e zero become 1).
     for i in range(len(my_list) - 1):
         min_index = i
         for j in range(i+1, len(my_list)):

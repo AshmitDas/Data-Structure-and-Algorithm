@@ -48,6 +48,8 @@ class BinarySearchTree:
         return current_node
 
     def dfs_pre_order(self):
+        # Visit a node and append it's value to result list.
+        # First left side visited and then right side.
         results = []
 
         def traverse(current_node):

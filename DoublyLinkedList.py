@@ -15,6 +15,9 @@ class DoublyLinkedList:
         self.length = 1
 
     def append(self, value):
+        """Big O: O(1)"""
+        # Adds a value at the end of the list.
+
         new_node = Node(value)
         if self.length == 0:
             self.head = new_node
@@ -27,6 +30,9 @@ class DoublyLinkedList:
         return True
 
     def pop(self):
+        """Big O: O(1)"""
+        # Removes a value(node) from the end of the list.
+
         if self.head is None:
             return None
         temp = self.tail
@@ -41,6 +47,9 @@ class DoublyLinkedList:
         return temp
 
     def pop_first(self):
+        """Big O: O(1)"""
+        # Removes a value(node) from the begining of the list.
+        
         if self.length == 0:
             return None
         temp = self.head
@@ -55,6 +64,9 @@ class DoublyLinkedList:
         return temp
 
     def prepend(self, value):
+        """Big O: O(1)"""
+        # Adds a value at the begining of the list.
+        
         new_node = Node(value)
         if self.length == 0:
             self.head = new_node
@@ -67,6 +79,9 @@ class DoublyLinkedList:
         return True
 
     def get(self, index):
+        """Big O: O(n)"""
+        # Returns a value from a particluar index given while calling the method
+        
         if index < 0 or index >= self.length:
             return None
         temp = self.head
@@ -80,6 +95,9 @@ class DoublyLinkedList:
         return temp
 
     def set_value(self, index, value):
+        """Big O: O(n)"""
+         # Changes the value at a particular index given while calling the method
+        
         temp = self.get(index)
         if temp:
             temp.value = value
@@ -87,6 +105,9 @@ class DoublyLinkedList:
         return False
 
     def insert(self, index, value):
+        """Big O: O(n)"""
+        # Adds a value at a particular index given while calling the method.
+        
         if index < 0  or index > self.length:
             return False
         if index == 0:
@@ -104,6 +125,9 @@ class DoublyLinkedList:
         return True
 
     def remove(self, index):
+        """Big O: O(n)"""
+        # Removes a value(more specifically node) at a particular index given while calling the method.
+        
         if index < 0 or index >= self.length:
             return None
         if index == 0:
@@ -140,6 +164,9 @@ class DoublyLinkedList:
     #     return temp
 
     def print_list(self) -> None:
+        """Big O: O(n)"""
+        # Prints the whole list.
+        
         if self.length == 0:
             return None
         temp = self.head

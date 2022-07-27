@@ -48,6 +48,8 @@ class BinarySearchTree:
         return current_node
 
     def dfs_in_order(self):
+        # Visits each node and when a node has completed visiting it's left side
+        # append the value to result list.
         results = []
 
         def traverse(current_node):

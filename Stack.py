@@ -11,6 +11,9 @@ class Stack:
         self.height = 1
 
     def push(self, value):
+        """Big O: O(1)"""
+        # Adds a value to the top of the stack.
+
         new_node = Node(value)
         if self.height == 0:
             self.top = new_node
@@ -21,6 +24,9 @@ class Stack:
         return True
 
     def pop(self):
+        """Big O: O(1)"""
+        # Removes a value from the top of the stack.
+
         if self.height == 0:
             return None
         temp = self.top
@@ -30,6 +36,9 @@ class Stack:
         return temp
 
     def print_stack(self):
+        """Big O: O(n)"""
+        # Prints the stack
+        
         if self.height == 0:
             return None
         temp = self.top
