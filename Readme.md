@@ -41,7 +41,7 @@ Data structures and Algorithm problems solved using python3. All problems are be
 
 8. **Depth First Search:** *Depth-first search is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node and explores as far as possible along each branch before backtracking.*
 
-9. **[Inorder, PostOrder, PreOrder](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/).**
+9. **[InOrder, PostOrder, PreOrder](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/).**
 
 
 **[Time and Space Complexity CheatSheet](https://www.bigocheatsheet.com/)**
